@@ -1,0 +1,171 @@
+:root {
+  --primary-color: #007acc;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --header-color: #ffffff;
+  --link-hover: #005f99;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--primary-color);
+  color: var(--header-color);
+  padding: 2em 1em;
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 1em;
+  width: 220px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: var(--header-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid var(--header-color);
+  color: var(--link-hover);
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 960px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+h2 {
+  border-left: 6px solid var(--primary-color);
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  color: var(--primary-color);
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+blockquote {
+  background-color: #e6f0fa;
+  padding: 1em;
+  border-left: 5px solid var(--primary-color);
+  font-style: italic;
+  margin: 1em 0;
+}
+
+/* Imagem da família */
+section#familia img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1em;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Áudio */
+audio {
+  width: 100%;
+  margin-top: 1em;
+}
+
+/* Aside com links */
+aside {
+  background-color: #f0f0f0;
+  padding: 1em;
+  margin: 2em auto;
+  max-width: 960px;
+  border-radius: 8px;
+}
+
+aside h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+aside ul {
+  list-style: square;
+  padding-left: 1.5em;
+}
+
+aside ul li {
+  margin-bottom: 0.5em;
+}
+
+aside ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--primary-color);
+  color: var(--header-color);
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  main {
+    margin: 1em;
+    padding: 1em;
+  }
+}
